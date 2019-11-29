@@ -1,4 +1,5 @@
-# trans_num_to_lcd
+# 备忘
 
-ThoughtWorks最佳编程体验第三季的编程题解答
-将数字转换为lcd的表现形式
+## 服务器
+1. 指定端口连接服务器: `ssh -p 30210 root@123.233.248.68`
+2. 指定端口传输压缩文件：`scp -P 30210 -p file.tar.gz root@123.233.248.68:files`
