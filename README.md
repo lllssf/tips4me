@@ -17,11 +17,12 @@ jupyter notebook --generate-config
 jupyter notebook password
 ```
 打开密码的json文件，复制密钥
+
 4. 修改配置文件
 ```
 vim ~/.jupyter/jupyter_notebook_config.py
 ```
-  通过`/`查找字符串找到并修改以下内容
+通过`/`查找字符串找到并修改以下内容
 ```
 c.NotebookApp.ip='*' #允许访问的IP地址，设置为*代表允许任何客户端访问
 c.NotebookApp.password = u'sha1:8d...刚才生成密码时复制的密文'
