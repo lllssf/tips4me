@@ -35,3 +35,7 @@ c.NotebookApp.allow_remote_access = True
 jupyter notebook --allow-root
 ```
 6. 解决无法远程访问的问题，通过xshell工具修改会话`属性-ssh-隧道`，点击`添加`，将侦听端口设为8000，服务器端口默认为8888，在本地输入`localhost:8000`就可以访问服务器jupyter notebook了。
+7. 将jupyter notebook代码转为`.py`脚本
+```
+jupyter nbconvert --to script name.ipynb
+```
