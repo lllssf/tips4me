@@ -39,3 +39,23 @@ jupyter notebook --allow-root
 ```
 jupyter nbconvert --to script name.ipynb
 ```
+8. 在服务器创建会话后台运行持续运行jupyter notebook
+```
+screen -S name
+```
+通过快捷键`Ctrl+a+d`detach这个会话回到之前的窗口，也可以创建会话来跑程序。
+```
+# 恢复会话
+screen -r name
+```
+通过`Ctrl+c`停止程序。
+```
+# 清除后台
+screen -X -S name quit
+```
+
+## pytorch
+### 制作/读取自己的数据集
+1. 制作存储了图片的路径和标签信息的txt
+2. 将这些信息转化为list，该list每个元素对应一个样本
+3. 构建Dataset子类，通过getitem函数，读取数据和标签，并返回数据和标签
