@@ -7,6 +7,7 @@
   - [零碎知识](#%e9%9b%b6%e7%a2%8e%e7%9f%a5%e8%af%86)
   - [图像](#%e5%9b%be%e5%83%8f)
 - [PyTorch](#pytorch)
+  - [PyTorch基础教程](#pytorch%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b)
   - [制作/读取自己的数据集](#%e5%88%b6%e4%bd%9c%e8%af%bb%e5%8f%96%e8%87%aa%e5%b7%b1%e7%9a%84%e6%95%b0%e6%8d%ae%e9%9b%86)
 - [Linux](#linux)
 - [VScode](#vscode)
@@ -82,6 +83,9 @@ screen -X -S name quit
    ```
    
 ## PyTorch
+
+### PyTorch基础教程
+学习的一些[PyTorch基础教程](https://github.com/lllssf/NN-implemantation/blob/master/torch_tutor.ipynb)
 ### 制作/读取自己的数据集
 1. 制作存储了图片的路径和标签信息的txt
 2. 将这些信息转化为list，该list每个元素对应一个样本
