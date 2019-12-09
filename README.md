@@ -1,5 +1,14 @@
 # 备忘
+<!-- TOC -->
 
+- [服务器](#%e6%9c%8d%e5%8a%a1%e5%99%a8)
+  - [在远程服务器搭建jupyter notebook](#%e5%9c%a8%e8%bf%9c%e7%a8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%bajupyter-notebook)
+- [Python](#python)
+  - [图像](#%e5%9b%be%e5%83%8f)
+- [PyTorch](#pytorch)
+  - [制作/读取自己的数据集](#%e5%88%b6%e4%bd%9c%e8%af%bb%e5%8f%96%e8%87%aa%e5%b7%b1%e7%9a%84%e6%95%b0%e6%8d%ae%e9%9b%86)
+
+<!-- /TOC -->
 ## 服务器
 1. 指定端口连接服务器: `ssh -p 端口 root@ip`
 2. 指定端口传输压缩文件：`scp -P 端口 -p file.tar.gz root@ip:files`
