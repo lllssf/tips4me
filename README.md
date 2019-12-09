@@ -7,6 +7,8 @@
   - [图像](#%e5%9b%be%e5%83%8f)
 - [PyTorch](#pytorch)
   - [制作/读取自己的数据集](#%e5%88%b6%e4%bd%9c%e8%af%bb%e5%8f%96%e8%87%aa%e5%b7%b1%e7%9a%84%e6%95%b0%e6%8d%ae%e9%9b%86)
+- [Linux](#linux)
+- [VScode](#vscode)
 
 <!-- /TOC -->
 ## 服务器
@@ -80,3 +82,9 @@ screen -X -S name quit
 1. 制作存储了图片的路径和标签信息的txt
 2. 将这些信息转化为list，该list每个元素对应一个样本
 3. 构建Dataset子类，通过getitem函数，读取数据和标签，并返回数据和标签
+
+## Linux 
+参见[Linux基本](https://github.com/lllssf/tips4me/blob/master/Linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.md)
+
+## VScode
+参见[VScode 快捷键](https://github.com/lllssf/tips4me/blob/master/VScode%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
