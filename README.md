@@ -1,9 +1,9 @@
-# 备忘
 <!-- TOC -->
 
 - [服务器](#%e6%9c%8d%e5%8a%a1%e5%99%a8)
   - [在远程服务器搭建jupyter notebook](#%e5%9c%a8%e8%bf%9c%e7%a8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%bajupyter-notebook)
 - [Python](#python)
+  - [零碎知识](#%e9%9b%b6%e7%a2%8e%e7%9f%a5%e8%af%86)
   - [图像](#%e5%9b%be%e5%83%8f)
 - [PyTorch](#pytorch)
   - [制作/读取自己的数据集](#%e5%88%b6%e4%bd%9c%e8%af%bb%e5%8f%96%e8%87%aa%e5%b7%b1%e7%9a%84%e6%95%b0%e6%8d%ae%e9%9b%86)
@@ -65,6 +65,9 @@ screen -r name
 screen -X -S name quit
 ```
 ## Python
+
+### 零碎知识
+当时为面试积累的一些[python零碎知识](https://github.com/lllssf/Fight-for-offer/blob/master/%E9%9D%A2%E8%AF%95%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/python%E9%9B%B6%E7%A2%8E.md)
 ### 图像
 1. 查看图像通道数
    ```python
