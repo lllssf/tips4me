@@ -53,8 +53,20 @@ screen -r name
 # 清除后台
 screen -X -S name quit
 ```
-
-## pytorch
+## Python
+### 图像
+1. 查看图像通道数
+   ```python
+   print(len(img.split())
+   ```
+2. 图片格式转换：png图，RBGA（透明度）四通道转换为RBG三通道：
+   ```python
+   from PIL import Image
+   img = Image.open(png_path)
+   img = img.convert('RGB')
+   ```
+   
+## PyTorch
 ### 制作/读取自己的数据集
 1. 制作存储了图片的路径和标签信息的txt
 2. 将这些信息转化为list，该list每个元素对应一个样本
