@@ -50,7 +50,7 @@ jupyter notebook password
 vim ~/.jupyter/jupyter_notebook_config.py
 ```
 
-通过`/`查找字符串找到并修改以下内容
+通过`/`查找字符串找到并修改以下内容（去掉#）
 
 ```shell
 c.NotebookApp.ip='*' #允许访问的IP地址，设置为*代表允许任何客户端访问
