@@ -3,6 +3,7 @@
 
 - [服务器](#%e6%9c%8d%e5%8a%a1%e5%99%a8)
   - [在远程服务器搭建jupyter notebook](#%e5%9c%a8%e8%bf%9c%e7%a8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%bajupyter-notebook)
+  - [在本地查看远程visdom](#%e5%9c%a8%e6%9c%ac%e5%9c%b0%e6%9f%a5%e7%9c%8b%e8%bf%9c%e7%a8%8bvisdom)
 - [Python](#python)
   - [零碎知识](#%e9%9b%b6%e7%a2%8e%e7%9f%a5%e8%af%86)
   - [图像](#%e5%9b%be%e5%83%8f)
@@ -42,7 +43,7 @@ jupyter notebook --generate-config
 jupyter notebook password
 ```
 
-打开密码的json文件，复制密钥
+- 打开密码的json文件，复制密钥
 
 4. 修改配置文件
 
@@ -50,7 +51,7 @@ jupyter notebook password
 vim ~/.jupyter/jupyter_notebook_config.py
 ```
 
-通过`/`查找字符串找到并修改以下内容（去掉#）
+- 通过`/`查找字符串找到并修改以下内容
 
 ```shell
 c.NotebookApp.ip='*' #允许访问的IP地址，设置为*代表允许任何客户端访问
@@ -79,19 +80,36 @@ jupyter nbconvert --to script name.ipynb
 screen -S name
 ```
 
-通过快捷键`Ctrl+a+d`detach这个会话回到之前的窗口，也可以创建会话来跑程序。
+- 通过快捷键`Ctrl+a+d`detach这个会话回到之前的窗口，也可以创建会话来跑程序。
 
 ```shell
 # 恢复会话
 screen -r name
 ```
 
-通过`Ctrl+c`停止程序。
+- 通过`Ctrl+c`停止程序。
 
 ```shell
 # 清除后台
 screen -X -S name quit
 ```
+
+### 在本地查看远程visdom
+
+1. 服务器端安装visdom
+   ```shell
+   pip install visdom
+   ```
+2. 将服务器的8097端口重定向到自己机器上来
+   ```shell
+   ssh -L 18097:127.0.0.1:8097 username@remote_server_ip
+   ```
+3. 服务器端启动visdom：
+   ```shell
+   python -m visdom.server
+   ```
+4. 通过xshell工具修改会话`属性-ssh-隧道`，点击`添加`，将侦听端口设为8097，服务器端口为8097。
+5. 在本地浏览器输入地址`http://localhost:8097/`即可查看visdom
 
 ## Python
 
@@ -166,6 +184,13 @@ screen -X -S name quit
    ls -lR | grep '.png' | wc -l
    ```
 
+2. 查看端口占用情况
+   ```shell
+   lsof -i:<port>
+   # 杀死某个端口占用进程
+   kill -s 9 <进程ID>
+   ```
+   
 ## VScode
 
 参见[VScode 快捷键](https://github.com/lllssf/tips4me/blob/master/VScode%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
