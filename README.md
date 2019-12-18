@@ -16,6 +16,8 @@
   - [基础](#%e5%9f%ba%e7%a1%80)
   - [日常用到的命令](#%e6%97%a5%e5%b8%b8%e7%94%a8%e5%88%b0%e7%9a%84%e5%91%bd%e4%bb%a4)
 - [VScode](#vscode)
+- [Markdown](#markdown)
+  - [字体转换](#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2)
 
 <!-- /TOC -->
 ## 服务器
@@ -96,6 +98,8 @@ screen -X -S name quit
 
 ### 在本地查看远程visdom
 
+Visdom是支持torch和numpy的可视化工具。
+
 1. 服务器端安装visdom
    ```shell
    pip install visdom
@@ -168,11 +172,13 @@ screen -X -S name quit
 ## Linux 
 
 ### 基础
+
 参见[Linux基本](https://github.com/lllssf/tips4me/blob/master/Linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.md)
 
 ### 日常用到的命令
 
 1. 统计文件数目：
+
    ```shell
    # 当前目录下所有文件数目
    ls -l | grep '^-' | wc -l
@@ -185,12 +191,32 @@ screen -X -S name quit
    ```
 
 2. 查看端口占用情况
+
    ```shell
    lsof -i:<port>
    # 杀死某个端口占用进程
    kill -s 9 <进程ID>
    ```
-   
+
 ## VScode
 
 参见[VScode 快捷键](https://github.com/lllssf/tips4me/blob/master/VScode%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
+
+## Markdown
+
+### 字体转换
+
+可以使用 `${\字体{内容}}$` 格式进行字体转换，一般情况下，公式默认为意大利体。
+格式|字体|样例
+:-:|:-:|:-:
+\rm|罗马体|${\rm{X,x}}$
+\mathcal|花体|${\mathcal{X,x}}$
+\it|意大利体|${\it{X,x}}$
+\Bbb|黑板粗体|${\Bbb{X,x}}$
+\bf|粗体|${\bf{X,x}}$
+\mathit|数学斜体|${\mathit{X,x}}$
+\sf|等线体|${\sf{X,x}}$
+\scriptstyle|手写体|${\scriptstyle{X,x}}$
+\tt|打字机体|${\tt{X,x}}$
+\frak|旧德式字体|${\frak{X,x}}$
+\blodsymbol|黑体|${\boldsymbol{X,x}}$
