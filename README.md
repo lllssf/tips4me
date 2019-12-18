@@ -204,6 +204,8 @@ Visdom是支持torch和numpy的可视化工具。
 
 ## Markdown
 
+Github中Markdown公式显示方法：Chrome安装[MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) 插件。
+
 ### 字体转换
 
 可以使用 `${\字体{内容}}$` 格式进行字体转换，一般情况下，公式默认为意大利体。
