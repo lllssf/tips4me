@@ -1,23 +1,26 @@
 # 备忘
 <!-- TOC -->
 
-- [服务器](#%e6%9c%8d%e5%8a%a1%e5%99%a8)
-  - [在远程服务器搭建jupyter notebook](#%e5%9c%a8%e8%bf%9c%e7%a8%8b%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%bajupyter-notebook)
-  - [在本地查看远程visdom](#%e5%9c%a8%e6%9c%ac%e5%9c%b0%e6%9f%a5%e7%9c%8b%e8%bf%9c%e7%a8%8bvisdom)
+- [服务器](#服务器)
+    - [在远程服务器搭建jupyter notebook](#在远程服务器搭建jupyter-notebook)
+    - [在本地查看远程visdom](#在本地查看远程visdom)
 - [Python](#python)
-  - [零碎知识](#%e9%9b%b6%e7%a2%8e%e7%9f%a5%e8%af%86)
-  - [图像](#%e5%9b%be%e5%83%8f)
-  - [常用函数](#%e5%b8%b8%e7%94%a8%e5%87%bd%e6%95%b0)
-  - [numpy](#numpy)
+    - [零碎知识](#零碎知识)
+    - [图像](#图像)
+    - [常用函数](#常用函数)
+    - [numpy](#numpy)
 - [PyTorch](#pytorch)
-  - [PyTorch基础教程](#pytorch%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b)
-  - [制作/读取自己的数据集](#%e5%88%b6%e4%bd%9c%e8%af%bb%e5%8f%96%e8%87%aa%e5%b7%b1%e7%9a%84%e6%95%b0%e6%8d%ae%e9%9b%86)
+    - [PyTorch基础教程](#pytorch基础教程)
+    - [制作/读取自己的数据集](#制作读取自己的数据集)
 - [Linux](#linux)
-  - [基础](#%e5%9f%ba%e7%a1%80)
-  - [日常用到的命令](#%e6%97%a5%e5%b8%b8%e7%94%a8%e5%88%b0%e7%9a%84%e5%91%bd%e4%bb%a4)
+    - [基础](#基础)
+    - [日常用到的命令](#日常用到的命令)
 - [VScode](#vscode)
 - [Markdown](#markdown)
-  - [字体转换](#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2)
+    - [数学公式](#数学公式)
+        - [戴帽符号](#戴帽符号)
+        - [字体转换](#字体转换)
+- [其他](#其他)
 
 <!-- /TOC -->
 ## 服务器
@@ -204,12 +207,25 @@ Visdom是支持torch和numpy的可视化工具。
 
 ## Markdown
 
-Github中Markdown公式显示方法：Chrome安装[MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) 插件。
+Github中Markdown公式显示方法：Chrome安装 [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) 插件。
 
-### 字体转换
+### 数学公式
+
+- `$公式$` 是行中公式
+- `$$公式$$` 是独立公式，独立成行居中显示。
+- `\sum_{下标表达式}^{上标表达式} {累加表达式}` 累加符号
+
+#### 戴帽符号
+
+格式|显示|格式|显示
+:-:|:-:|:-:|:-:
+\hat|$\hat{x}$|\widehat|$\widehat{xyz}$
+\tilde|$\tilde{x}$|\widetilde|$\widetilde{xyz}$
+\check|$\check{x}$|\widecheck|$\widecheck{xyz}$
+
+#### 字体转换
 
 可以使用 `${\字体{内容}}$` 格式进行字体转换，一般情况下，公式默认为意大利体。
-
 格式|字体|样例
 :-:|:-:|:-:
 \rm|罗马体|${\rm{X,x}}$
@@ -223,3 +239,7 @@ Github中Markdown公式显示方法：Chrome安装[MathJax](https://chrome.googl
 \tt|打字机体|${\tt{X,x}}$
 \frak|旧德式字体|${\frak{X,x}}$
 \blodsymbol|黑体|${\boldsymbol{X,x}}$
+
+## 其他
+
+1. 下载Github上某一仓库下的某一文件可以使用[DownGit](https://www.itsvse.com/downgit/#/home)网站
