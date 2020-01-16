@@ -27,6 +27,7 @@
 
 1. 指定端口连接服务器: `ssh -p 端口 root@ip`
 2. 指定端口传输压缩文件：`scp -P 端口 -p file.tar.gz root@ip:files`
+3. 指定端口传输文件夹：`scp -P 端口 -r file root@ip:files`
 
 ### 在远程服务器搭建jupyter notebook
 
